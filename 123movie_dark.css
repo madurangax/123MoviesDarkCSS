@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
     :root {
     --blue: #007bff;
@@ -11023,7 +11024,7 @@ div#disqus_thread {
     border-width: 2px;
 }
 main {
-    margin-top: -5px;
+    margin-top: 30px;
 }
 section > .head > .start .title {
     color: #8b888f;
