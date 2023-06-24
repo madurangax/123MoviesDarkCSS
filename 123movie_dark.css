@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
     :root {
     --blue: #007bff;
@@ -10954,15 +10953,12 @@ ul.az-filters li {
 header {
    background: linear-gradient(360deg, rgba(65,64,67,1) 0%, rgba(0,0,0,0) 100%);
 }
-
 .logo img {
     opacity: 0.2;
 }
-
 .movies.items .item .inner {
     background: linear-gradient(360deg, rgba(65,64,67,1) 0%, rgba(0,0,0,0) 100%);
 }
-
 #movie-full-info {
     background: none;
     background: linear-gradient(360deg, rgba(65,64,67,1) 0%, rgba(0,0,0,0) 50%);
@@ -10970,90 +10966,65 @@ header {
 .watch-wrap .poster img {
     opacity: 0.9;
 }
-
 #movie-full-info .data {
     opacity: 0.7;
 }
-
 #st-1 {
     display: none;
 }
-
 .inner {
     border-radius: 5px;
     margin: 5px;
 }
-
 div#disqus_thread {
     padding-left: 10px;
     padding-right: 10px;
-
-}
-.watchpage-inner {
-    padding: 20px;
-}
-
-.watchpage-inner {
-    display: none;
 }
 .mb-3 img {
     display: none;
 }
-
 #movie-player .movie-player-wrap #player {
     border-radius: 5px;
 }
-
 .playable {
     opacity: 0.8;
 }
-
 .episode-top {
     margin-left: 20px;
     margin-right: 20px;
 }
-
 .second-bg {
     opacity: 0.7;
 }
-
 .mini.items .item .name {
     color: #8b888f;
 }
-
 #comment {
     padding: 50px;
     border-radius: 10px;
     opacity: 0.7;
 }
-
 .episodes span {
     color: white;
 }
-
 .episodes .active span {
     color: black;
 }
-
 .episodes {
     opacity: 0.7;
     margin-left: 20px;
     margin-right: 20px;
 }
-
 .watch-wrap {
     margin-top: -30px;
 }
-
 #movie-clouds .movie-clouds-wrap .movie-cloud > div {
     border-color: #323133;
     border-width: 2px;
 }
-
 main {
     margin-top: -5px;
 }
-
 section > .head > .start .title {
     color: #8b888f;
 }
@@ -11065,8 +11036,16 @@ section > .head > .start .title {
     border-width: 2px;
     Color: white;
 }
-
 .clearfix {
     background-color:  #262527;
     border-radius: 5px;
+}
+.film-tags .label {
+    display: none;
+}
+.film-tags h2 {
+    display: none;
+}
+.film-tags span {
+    display: none;
 }
