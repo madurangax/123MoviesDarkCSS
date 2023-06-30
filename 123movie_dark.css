@@ -9522,8 +9522,8 @@ section.second-bg .head .start .title {
     background-image:  radial-gradient(at 100% top, rgb(0, 0, 0, 0) 0%, rgb(40, 40, 40, 1) 100%)!important;*/
     background: -webkit-linear-gradient(to left, rgb(0, 0, 0, 0) 0%, rgb(40, 40, 40, 1) 100%)!important;
     background-image:  linear-gradient(to left, rgb(0, 0, 0, 0) 0%, rgb(40, 40, 40, 1) 100%)!important;
-	zoom: 120%;
 }
+
 .mini.items .item .poster {
     width: 35px!important;
 }
@@ -9533,12 +9533,14 @@ section.second-bg .head .start .title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
+
 .mini.items .item .meta {
     color: #d3d3d3;
     font-size: .9rem;
 }
+
 .mini.items .item .meta span:last-child {
     color: rgba(255, 255, 255, .8);
 }
@@ -11103,4 +11105,27 @@ body.watchpage .watchpage-inner .sidebar {
 .fa-star-half-stroke {
     color: white;
     opacity: 0.3
+}
+#movie-full-info .data .description .desc-btn {
+    opacity: 0.3
+}
+#movie-full-info .data .description {
+    padding: 0 1rem 2rem;
+}
+#movie-full-info .data .description .short>div {
+    /*overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;*/
+}
+.btn-sm {
+    background: 0 0;
+    color: white;
+    border: none;
+    padding: .25rem .0rem;
+    text-transform: uppercase;
+}
+.btn-sm:hover {
+    background: 0 0;
+    color: white;
+    font-weight: bold;
 }
