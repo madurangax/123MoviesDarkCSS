@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
     :root {
     --blue: #007bff;
@@ -122,12 +121,12 @@ sup {
     top: -.5em;
 }
 a {
-    color: #454545; // SNJ 391952 dark purple
+    color: #454545;
     text-decoration: none;
     background-color: transparent;
 }
 a:hover {
-    color: #3c3c3c; // SNJ #383838 even dark purple
+    color: #3c3c3c;
     text-decoration: none;
 }
 a:not([href]):not([class]) {
@@ -1305,7 +1304,7 @@ pre code {
     background-color: #f2e7fa;
 }
 .table-primary1 tbody+tbody, .table-primary1 td, .table-primary1 th, .table-primary1 thead th {
-    border-color: #e7d3f6;
+    border-color: #efeaf2;
 }
 .table-hover .table-primary1:hover {
     background-color: #e7d2f6;
@@ -1332,10 +1331,10 @@ pre code {
     border-color: #9887a5;
 }
 .table-hover .table-secondary:hover {
-    background-color: #bbb0c4;
+    background-color: #c2c0c4;
 }
 .table-hover .table-secondary:hover>td, .table-hover .table-secondary:hover>th {
-    background-color: #bbb0c4;
+    background-color: #c2c0c4;
 }
 .table-secondary1, .table-secondary1>td, .table-secondary1>th {
     background-color: #f1e8f8;
@@ -1537,7 +1536,7 @@ pre code {
     font-weight: 400;
     line-height: 1.5;
     color: #f1ffff;
-    background-color: #383838; // SNJ #383838
+    background-color: #383838;
     background-clip: padding-box;
     border: 1px solid transparent;
     border-radius: .3rem;
@@ -1554,7 +1553,7 @@ pre code {
 .form-control:focus {
     color: #f1ffff;
     background-color: #383838;
-    border-color: #f4ebfb;
+    border-color: #e9e6ea;
     outline: 0;
     box-shadow: 0;
 }
@@ -3092,7 +3091,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     box-shadow: 0;
 }
 .custom-control-input:focus:not(:checked)~.custom-control-label::before {
-    border-color: #f4ebfb;
+    border-color: #e9e6ea;
 }
 .custom-control-input:not(:disabled):active~.custom-control-label::before {
     color: #747474;
@@ -3206,7 +3205,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     appearance: none;
 }
 .custom-select:focus {
-    border-color: #f4ebfb;
+    border-color: #e9e6ea;
     outline: 0;
     box-shadow: 0 0 0 0 rgba(186, 128, 230, .25);
 }
@@ -3261,7 +3260,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     opacity: 0;
 }
 .custom-file-input:focus~.custom-file-label {
-    border-color: #f4ebfb;
+    border-color: #e9e6ea;
     box-shadow: 0;
 }
 .custom-file-input:disabled~.custom-file-label, .custom-file-input[disabled]~.custom-file-label {
@@ -3851,7 +3850,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     color: rgba(255, 255, 255, .5);
 }
 .navbar-dark .navbar-text a {
-    color: #747474; // SNJ 60258D
+    color: #747474;
 }
 .navbar-dark .navbar-text a:focus, .navbar-dark .navbar-text a:hover {
     color: #747474;
@@ -4397,7 +4396,7 @@ a.badge-dark.focus, a.badge-dark:focus {
     border-color: #c8bfcf;
 }
 .alert-secondary hr {
-    border-top-color: #bbb0c4;
+    border-top-color: #c2c0c4;
 }
 .alert-secondary .alert-link {
     color: #030104;
@@ -4785,7 +4784,7 @@ to {
 }
 .list-group-item-secondary.list-group-item-action:focus, .list-group-item-secondary.list-group-item-action:hover {
     color: #3b3a3c;
-    background-color: #bbb0c4;
+    background-color: #c2c0c4;
 }
 .list-group-item-secondary.list-group-item-action.active {
     color: #747474;
@@ -8717,13 +8716,15 @@ body>.wrapper {
     overflow: auto;
 }
 .navigation::-webkit-scrollbar-track {
-    background: 0 0;
+    /*background: 0 0;*/
+    background-color: #282828!important;
 }
 .navigation::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 .navigation::-webkit-scrollbar {
-    background: 0 0;
+    /*background: 0 0;*/
+    background-color: #282828!important;
 }
 .text-major {
     color: #212121;
@@ -9201,7 +9202,7 @@ section>.head>.start .tabs .tab {
     color: #6c6c6c;
     transition: color .3s, border-color .3s;
     display: inline-block;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 section>.head>.start .tabs .tab+.tab {
     margin-left: 1.3rem;
@@ -9225,8 +9226,9 @@ section .body {
     margin-top: 1.5rem;
 }
 section.second-bg {
-    background: #383838;
+    background-image: linear-gradient(rgb(0, 0, 0, 1) 25%, rgb(50, 50, 50, 1) 100%); !important
     border-radius: .6rem;
+    background: 0 0; /* YOU MAY LIKE Sidebar*/
 }
 section.second-bg .head .start {
     padding: 1rem 1rem .5rem;
@@ -9508,11 +9510,19 @@ section.second-bg .head .start .title {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    /*border-bottom: 1px solid rgba(255, 255, 255, .1);*/
+    border-radius: 10px;
+    border: none;  /* removes bottom boder / YOU MAY LIKE Sidebar*/
 }
 .mini.items .item.active, .mini.items .item:hover {
-    transition: all .4s;
-    background: #504e52;
+    transition: all .50s;
+    border-radius: 10px;
+    background: 0 0; /* #504e52 */ /* YOU MAY LIKE Sidebar*/
+    /*background: -webkit-radial-gradient(at 100% top, rgb(0, 0, 0, 0) 0%, rgb(40, 40, 40, 1) 100%)!important;
+    background-image:  radial-gradient(at 100% top, rgb(0, 0, 0, 0) 0%, rgb(40, 40, 40, 1) 100%)!important;*/
+    background: -webkit-linear-gradient(to left, rgb(0, 0, 0, 0) 0%, rgb(40, 40, 40, 1) 100%)!important;
+    background-image:  linear-gradient(to left, rgb(0, 0, 0, 0) 0%, rgb(40, 40, 40, 1) 100%)!important;
+	zoom: 120%;
 }
 .mini.items .item .poster {
     width: 35px!important;
@@ -9557,7 +9567,7 @@ section.second-bg .head .start .title {
 .movies.items .item .inner {
     position: relative;
     padding: 0 5px;
-    background: #262626; //SNJ 60258D
+    background: red; /*#262626;*/
 }
 .movies.items .item .inner .length {
     background: #e3daea;
@@ -9567,7 +9577,7 @@ section.second-bg .head .start .title {
     background: #454545;
 }
 .movies.items .item .inner .name {
-    color: #909090; //SNJ #000
+    color: #909090;
     font-weight: 600;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -9747,6 +9757,7 @@ body.watchpage .watchpage-inner .sidebar {
     flex-shrink: 0;
     margin-left: 1.2rem;
     order: 2;
+    /*opacity: 0.7; sidebar transparency*/
 }
 .film-tags {
     margin-top: 2rem;
@@ -9767,6 +9778,11 @@ body.watchpage .watchpage-inner .sidebar {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 10px;
+    /*background: 0 0;
+    background: -webkit-radial-gradient(top,rgb(40, 40, 40, 1) 40%, rgb(0, 0, 0, 0) 70%);
+	background: radial-gradient(at top,rgb(40, 40, 40, 1) 40%, rgb(0, 0, 0, 0) 70%);*/
+    
 }
 #movie-player .movie-player-wrap {
     width: 100%;
@@ -9784,6 +9800,7 @@ body.watchpage .watchpage-inner .sidebar {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 #movie-player .movie-player-wrap .player-bg.use-poster {
     background-size: cover;
@@ -9832,7 +9849,7 @@ body.watchpage .watchpage-inner .sidebar {
     font-size: 3rem;
 }
 #movie-player .btn-play:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 #movie-player .message {
     display: block;
@@ -9849,6 +9866,10 @@ body.watchpage .watchpage-inner .sidebar {
 }
 #movie-player.playable .btn-play {
     opacity: 1;
+  /* play button shadow*/
+  -moz-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
 }
 #m-controls {
     position: relative;
@@ -10054,7 +10075,7 @@ body.watchpage .watchpage-inner .sidebar {
 }
 #movie-episode .episode-range>div>a {
     border-radius: .3rem;
-    background: #383838; //SNJ
+    background: #383838;
     padding: .5rem 1rem;
     width: 100%;
     color: #000;
@@ -10062,6 +10083,7 @@ body.watchpage .watchpage-inner .sidebar {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    opacity: 0.7; 
 }
 #movie-episode .episode-range>div>a span {
     font-weight: 200;
@@ -10303,7 +10325,7 @@ body.watchpage .watchpage-inner .sidebar {
 #user-nav-folders .user-nav-folder-wrap .user-nav-folder {
     display: inline-flex;
     align-items: center;
-    color: #656565;  // SNJ #5c5a5d 
+    color: #656565;
     background: rgba(48, 16, 70, .05);
     border: 1px solid #ececec;
     padding: .2rem .7rem;
@@ -10427,7 +10449,7 @@ body.watchpage .watchpage-inner .sidebar {
 footer {
     background: #383838;
     margin-top: 2rem;
-    display: none; //SNJ
+    display: none;
 }
 footer .row {
     padding-top: 3rem;
@@ -10952,23 +10974,23 @@ ul.az-filters li {
 
 
 header {
-   background: linear-gradient(360deg, rgba(65,64,67,1) 0%, rgba(0,0,0,0) 100%);
+   background: linear-gradient(360deg, rgba(50,50,50,1) 0%, rgba(0,0,0,0) 100%);
 }
 .logo img {
     opacity: 0.2;
 }
 .movies.items .item .inner {
-    background: linear-gradient(360deg, rgba(65,64,67,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(360deg, rgba(50,50,50,1) 0%, rgba(0,0,0,0) 100%);
 }
 #movie-full-info {
-    background: none;
-    background: linear-gradient(360deg, rgba(65,64,67,1) 0%, rgba(0,0,0,0) 50%);
+    /* background: linear-gradient(360deg, rgba(65,64,67,1) 0%, rgba(0,0,0,0) 50%);*/
+    background-image: linear-gradient(rgb(0, 0, 0, 1) 2%, rgb(50, 50, 50, 1) 100%); !important
 }
 .watch-wrap .poster img {
     opacity: 0.9;
 }
 #movie-full-info .data {
-    opacity: 0.7;
+    
 }
 #st-1 {
     display: none;
@@ -10987,24 +11009,23 @@ div#disqus_thread {
 #movie-player .movie-player-wrap #player {
     border-radius: 5px;
 }
-.playable {
-    opacity: 0.8;
-}
+
 .episode-top {
     margin-left: 20px;
     margin-right: 20px;
 }
 .second-bg {
-    opacity: 0.7;
+    /*opacity: 1;*/
 }
 .mini.items .item .name {
-    color: #8b888f;
+    /*color: #8b888f;*/
 }
 #comment {
     padding: 50px;
     border-radius: 10px;
     opacity: 0.7;
 }
+
 .episodes span {
     color: white;
 }
@@ -11012,7 +11033,6 @@ div#disqus_thread {
     color: black;
 }
 .episodes {
-    opacity: 0.7;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -11049,4 +11069,38 @@ section > .head > .start .title {
 }
 .film-tags span {
     display: none;
+}
+.wrapper {
+    background-image: linear-gradient(rgb(0, 0, 0, 0) 50%, rgb(30, 30, 30, 1) 100%); !important
+}
+.playable {
+    background: 0 0;
+    background-image: linear-gradient(rgb(0, 0, 0, 0) 60%, rgb(40, 40, 40, 1) 150%); !important
+}
+.watchpage-inner.mt-4 {
+    border-radius: 10px;
+    /*background-image: linear-gradient(rgb(0, 0, 0, 0) 50%, rgb(50, 50, 50, 1) 100%);*/
+}
+body.watchpage .watchpage-inner .sidebar {
+    border-radius: 10px;
+    opacity: 0.5;
+}
+#comment {
+    opacity: 0.5;
+}
+#movie-full-info .data .rating-box {
+    background: #373737;
+    background-image: linear-gradient(rgb(0, 0, 0, 0) 00%, rgb(70, 70, 70, 1) 80%);
+}
+#movie-full-info .rating-box .score span {
+    color: white;
+    opacity: 0.7;
+}
+.fa-star  {
+    color: white;
+    opacity: 0.3;
+}
+.fa-star-half-stroke {
+    color: white;
+    opacity: 0.3
 }
