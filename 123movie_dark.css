@@ -1,3 +1,5 @@
+
+
 @charset "UTF-8";
     :root {
     --blue: #007bff;
@@ -11145,7 +11147,6 @@ body.watchpage .watchpage-inner .sidebar:hover {
 }
 #movie-clouds {
     transition: 1.0s;
-    filter: invert(0%);
 }
 #movie-clouds:hover  {
     opacity: 1;
@@ -11157,4 +11158,31 @@ body.watchpage .watchpage-inner .sidebar:hover {
 }
 .episodes:hover  {
     opacity: 1;
+}
+
+body::-webkit-scrollbar {
+      -webkit-appearance: none;
+    background-color: transparent;
+/*width: 5px;  width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+background: 0 0;
+background-image: linear-gradient(rgb(30, 30, 30, 1) 100%, rgb(0, 0, 0, 0) 20%, rgb(30, 30, 30, 1) 100%); !important
+   /*  color of the tracking area 
+  position: absolute;
+  right: -3rem;
+  top: -50rem;
+  background: transparent;*/
+    background-color: inherit;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #262626;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 0px solid #171717;  /* creates padding around scroll thumb */
+}
+
+#search {
+    z-index: 10;
 }
